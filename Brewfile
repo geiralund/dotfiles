@@ -97,7 +97,7 @@ brew 'gradle'
 brew 'maven'
 brew 'python'
 brew 'python3'
-cask 'minikube'
+#cask 'minikube'
 brew 'kubectl'
 
 # Mac App Store command line interface

@@ -55,9 +55,9 @@ bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
 
-if [ $commands[kubectl] ]; then
-  source <(kubectl completion zsh)
-fi
+# https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/
+source <(kubectl completion zsh)
+complete -F __start_kubectl k
 
 # default java from sdkman
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
