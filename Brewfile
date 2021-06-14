@@ -83,8 +83,8 @@ brew 'jq'
 #brew 'sshfs'
 
 
-# Hub -  https://github.com/github/hub
-brew 'hub'
+# cli github -  https://cli.github.com/
+brew 'gh'
 
 # Ktlint
 brew 'ktlint'
