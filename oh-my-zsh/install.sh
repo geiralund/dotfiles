@@ -6,7 +6,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 if [[ -d ~/.zsh/zsh-syntax-highlighting ]]; then
     printf "Update zsh-syntax-highlighting \n"
-    cd ~/.zsh/zsh-syntax-highlighting
+    cd ~/.zsh/zsh-syntax-highlighting  || { echo "$HOME/.zsh/zsh-syntax-highlighting finne ikke"; exit 1; }
     git pull
 
 else
@@ -18,7 +18,7 @@ fi
 
 if [[ -d ~/.zsh/zsh-autosuggestions ]]; then
     printf "Update zsh-autosuggestions \n"
-    cd ~/.zsh/zsh-autosuggestions
+    cd ~/.zsh/zsh-autosuggestions  || { echo "$HOME/.zsh/zsh-autosuggestions finnes ikke"; exit 1; }
     git pull
 
 else
