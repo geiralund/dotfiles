@@ -1,5 +1,6 @@
 # Terminals
 brew 'tmux'
+cask 'iterm2'
 
 # Repo
 brew 'repo'
