@@ -22,12 +22,6 @@ brew 'wget'
 # Version control
 brew 'git'
 
-# Circle ci
-brew 'circleci'
-
-# Ansible
-brew 'ansible'
-
 # https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
 # Basic file, shell and text manipulation utilities of the GNU operating system.
 brew 'coreutils'
@@ -76,12 +70,8 @@ brew 'grep'
 brew 'jq'
 
 # Docker software containers to help distribute applications.
-#brew 'docker'
-#brew 'docker-machine'
-#brew 'xhyve'
-#brew 'docker-machine-driver-xhyve'
-#cask 'osxfuse'
-#brew 'sshfs'
+brew 'docker'
+brew 'colima'
 
 
 # cli github -  https://cli.github.com/
@@ -103,3 +93,6 @@ brew 'kubectl'
 
 # Mac App Store command line interface
 brew 'mas'
+
+# node version manager
+brew 'nvm'
