@@ -86,3 +86,15 @@ if [ -f '/Users/l153963/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/l
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 eval "$(rbenv init -)"
 prompt_context() {} # Disable 'user@hostname' prompt for oh-my-zsh agnoster theme
+
+
+hedo() {
+    adam=$(id | grep -o "80(admin)")
+    if [[ "$adam" != "" ]]; then
+        echo "I Have The Power"
+    else
+        echo "By The Power Of Greyskull"
+        /Applications/Privileges.app/Contents/Resources/PrivilegesCLI --add
+        echo "I Have The Power"
+    fi
+}
