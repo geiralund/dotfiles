@@ -1,98 +1,122 @@
-# Terminals
-brew 'tmux'
-cask 'iterm2'
-
-# Repo
-brew 'repo'
-
-# Shells
-brew 'zsh'
-
-# Kubernetes
-brew 'kube-ps1'
-brew 'kubernetes-cli'
-
-# Editors
-cask 'sublime-text'
-
-# Download
-brew 'curl'
-brew 'wget'
-
-# Version control
-brew 'git'
-
-# https://www.topbug.net/blog/2013/04/14/install-and-use-gnu-command-line-tools-in-mac-os-x/
-# Basic file, shell and text manipulation utilities of the GNU operating system.
-brew 'coreutils'
-
-brew 'binutils'
-brew 'diffutils'
-brew 'ed'
-brew 'findutils'
-brew 'gawk'
-brew 'gnu-indent'
-brew 'gnu-sed'
-brew 'gnu-tar'
-brew 'gnu-which'
-brew 'gnutls'
-brew 'gzip'
-brew 'watch'
-brew 'wdiff'
-
-## Gpg stuff
-brew 'gnupg'
-brew 'pinentry-mac'
-
-##
-# Some GNU command line tools already exist by default on OS X.
-# We choose to replace these with newer versions.
-##
-
-brew 'gdb'  # gdb requires further actions to make it work. See `brew info gdb`.
-brew 'gpatch'
-brew 'less'
-brew 'm4'
-brew 'make'
-brew 'nano'
-
-
-# File compression/uncompression
-brew 'zstd'
-brew 'unrar'
-brew 'unzip'
-
-# file synchronizer.
-brew 'rsync'
-
-# Text search
-brew 'grep'
-brew 'jq'
-
-# Docker software containers to help distribute applications.
-brew 'docker'
-brew 'colima'
-
-
-# cli github -  https://cli.github.com/
-brew 'gh'
-
-# Ktlint
-brew 'ktlint'
-
-## Uncategorized
-brew 'base64'
-
-brew 'go'
-brew 'gradle'
-brew 'maven'
-brew 'python'
-brew 'python3'
-#cask 'minikube'
-brew 'kubectl'
-
-# Mac App Store command line interface
-brew 'mas'
-
-# node version manager
-brew 'nvm'
+tap "aybabtme/tap"
+tap "boz/repo"
+tap "clojure/tools"
+tap "codeclimate/formulae"
+tap "homebrew/autoupdate"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "johanhaleby/kubetail"
+tap "mongodb/brew"
+tap "nais/tap"
+brew "ack"
+brew "act"
+brew "python@3.10"
+brew "ansible"
+brew "webp"
+brew "m4"
+brew "autojump"
+brew "base64"
+brew "bfg"
+brew "binutils"
+brew "boost"
+brew "cloc"
+brew "lima"
+brew "colima"
+brew "coreutils"
+brew "zstd"
+brew "curl"
+brew "diffutils"
+brew "docker"
+brew "docker-compose"
+brew "ed", link: true
+brew "erlang"
+brew "elixir"
+brew "gobject-introspection"
+brew "harfbuzz"
+brew "tesseract"
+brew "ffmpeg"
+brew "findutils"
+brew "gawk"
+brew "gdb"
+brew "gh"
+brew "git"
+brew "gnupg"
+brew "git-secret"
+brew "gnu-indent"
+brew "gnu-sed"
+brew "gnu-tar"
+brew "gnu-which"
+brew "go"
+brew "gource"
+brew "gpatch"
+brew "netpbm"
+brew "pango"
+brew "librsvg"
+brew "graphviz"
+brew "grep"
+brew "gzip"
+brew "hashcat"
+brew "htop"
+brew "hub"
+brew "jq"
+brew "k6"
+brew "kafka"
+brew "ktlint"
+brew "kubernetes-cli"
+brew "kube-ps1"
+brew "kubectx"
+brew "kubie"
+brew "less"
+brew "libheif"
+brew "make"
+brew "mas"
+brew "maven"
+brew "nano"
+brew "nvm"
+brew "openapi-generator"
+brew "openssl@3"
+brew "pinentry-mac"
+brew "polipo"
+brew "postgresql"
+brew "python@3.8"
+brew "ruby-build"
+brew "rbenv"
+brew "rsync"
+brew "ruby"
+brew "sqlmap"
+brew "telnet"
+brew "terraform"
+brew "tmux"
+brew "unrar"
+brew "unzip"
+brew "vault"
+brew "watch"
+brew "watchman"
+brew "wdiff"
+brew "wget"
+brew "wrk"
+brew "yarn"
+brew "zsh"
+brew "zsh-completions"
+brew "boz/repo/kail"
+brew "clojure/tools/clojure"
+brew "codeclimate/formulae/codeclimate"
+brew "johanhaleby/kubetail/kubetail"
+brew "mongodb/brew/mongodb-community"
+brew "nais/tap/nais"
+cask "emacs"
+cask "freemind"
+cask "minikube"
+cask "naisdevice"
+cask "sublime-text"
+mas "1Password 7", id: 1333542190
+mas "Amphetamine", id: 937984704
+mas "Cleaner-App", id: 1013897218
+mas "Clearview", id: 557090104
+mas "GoodNotes", id: 1444383602
+mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "Magnet", id: 441258766
+mas "Pages", id: 409201541
