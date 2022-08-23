@@ -1,6 +1,7 @@
 export ZSH=~/.oh-my-zsh
 #ZSH_THEME="af-magic"
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 plugins=(
   git

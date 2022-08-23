@@ -1,4 +1,2 @@
-GPG_TTY=$(tty)
-export GPG_TTY
-echo "Starting gpg-agent daemon"
-eval $(gpg-agent --daemon)
+export GPG_TTY=$TTY
+eval $(gpg-agent --daemon -q)
