@@ -19,6 +19,7 @@ brew "webp"
 brew "m4"
 brew "autojump"
 brew "base64"
+brew "harfbuzz"
 brew "bfg"
 brew "binutils"
 brew "zstd"
@@ -32,9 +33,6 @@ brew "diffutils"
 brew "docker"
 brew "docker-compose"
 brew "ed", link: true
-brew "erlang"
-brew "elixir"
-brew "harfbuzz"
 brew "tesseract"
 brew "ffmpeg"
 brew "findutils"
@@ -110,10 +108,6 @@ brew "codeclimate/formulae/codeclimate", link: false
 brew "johanhaleby/kubetail/kubetail"
 brew "mongodb/brew/mongodb-community"
 brew "nais/tap/nais"
-cask "emacs"
-cask "freemind"
-cask "minikube"
-cask "mockoon"
 cask "naisdevice"
 cask "sublime-text"
 mas "1Password 7", id: 1333542190
@@ -124,6 +118,5 @@ mas "GoodNotes", id: 1444383602
 mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "Magnet", id: 441258766
-mas "myTuner Radio", id: 881415018
 mas "Pages", id: 409201541
 mas "The Unarchiver", id: 425424353
