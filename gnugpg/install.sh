@@ -2,7 +2,7 @@
 
 
 if [[ -d ~/.gnupg/gpg.conf ]]; then
-    printf "Updating gpg.conf \n"
+   printf "Updating gpg.conf \n"
    cat gnugpg/gpg.conf > ~/.gnupg/gpg.conf
 
 else

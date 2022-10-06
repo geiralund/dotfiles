@@ -38,3 +38,5 @@
 	    default = current
 [commit]
 	    gpgsign = true
+[user]
+	signingkey = 2E643DC1E7A18D8C51D6D6B6062F7674BF237086
