@@ -5,25 +5,10 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# ================ Antigen =================================
-
-source /opt/homebrew/share/antigen/antigen.zsh
-
-antigen bundle zsh-users/zsh-autosuggestions           # Autosuggestions
-antigen bundle zsh-users/zsh-syntax-highlighting       # Syntax highlighting
-antigen bundle gezalore/zsh-prioritize-cwd-history     # Prioritize history based on current dir
-antigen bundle Aloxaf/fzf-tab                          # Fuzzy tab completion
-antigen apply
-
-bindkey '^[[Z' autosuggest-accept                      # shift-tab to accept autosuggestion
-bindkey '\t' fzf-tab-complete                          # tab to complete
-
-# ================ LANG =================================
-
+# lang
 export LC_ALL="no_NO.UTF-8"
 export LANG="no_NO.UTF-8"
 export LC_CTYPE="no_NO.UTF-8"
-
 
 # shortcut to this dotfiles path is $ZSH
 export ZSHDOT=$HOME/.dotfiles

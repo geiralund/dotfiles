@@ -1,2 +1,2 @@
 export GPG_TTY=$TTY
-eval $(gpg-agent --daemon -q)
+# eval $(gpg-agent --daemon -q)

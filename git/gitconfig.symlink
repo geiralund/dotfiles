@@ -36,6 +36,7 @@
 	    rebase = true
 [push]
 	    default = current
+	    autoSetupRemote = true
 [commit]
 	    gpgsign = true
 [user]
