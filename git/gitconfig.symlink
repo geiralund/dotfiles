@@ -10,8 +10,6 @@
         delete-merged-branches  = !git branch --merged | grep -v \"\\*\" | grep -v master | xargs -n 1 git branch -d
         wipe = reset --hard HEAD
         promote = !$ZSHDOT/bin/git-promote
-        wtf     = !$ZSHDOT/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 
 [color]
@@ -39,6 +37,6 @@
 	    autoSetupRemote = true
 [commit]
 	    gpgsign = true
-	template = /Users/l153963/.gitmessage
+	    template = /Users/l153963/.gitmessage
 [user]
 	signingkey = 2E643DC1E7A18D8C51D6D6B6062F7674BF237086
