@@ -13,3 +13,4 @@ alias weather='curl wttr.in/Askim'
 alias serve='python3 -m http.server'
 
 alias logs='open https://logs.adeo.no/'
+alias specmatic='java -jar ~/bin/specmatic.jar'
