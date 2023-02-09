@@ -39,6 +39,13 @@
 	    gpgsign = true
 	    template = /Users/l153963/.gitmessage
 [user]
-	signingkey = 2E643DC1E7A18D8C51D6D6B6062F7674BF237086
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFD+dzJ+43T2teupbZmLe04Isa0CrqshOYE+ITz5JBCz
+
+[gpg]
+  format = ssh
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
 [hub]
 	protocol = git
