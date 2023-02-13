@@ -77,6 +77,9 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 # local bin
 export PATH="$HOME/bin:$PATH"
 
+# edgedb
+export PATH="$PATH:/Users/l153963/Library/Application Support/edgedb/bin"
+
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
