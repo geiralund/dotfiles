@@ -28,7 +28,7 @@
 [difftool]
         prompt = false
 [help]
-        autocorrect = 1
+	    autocorrect = 20
 [pull]
 	    default = current
 	    rebase = true
