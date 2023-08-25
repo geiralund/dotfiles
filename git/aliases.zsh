@@ -21,3 +21,4 @@ alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
 alias github='gh repo view --web'
+alias dependabot="git fetch | gh pr list -A app/dependabot --json headRefName -q '.[].headRefName' | xargs -I {} git merge origin/{}"
