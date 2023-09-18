@@ -1,3 +1,4 @@
 export GRADLE_OPTS="-Xms2g -Xmx4048m -Xss16m -XX:+HeapDumpOnOutOfMemoryError -Dfile.encoding=UTF-8"
 
-# debug  -Djavax.net.debug=all -Dhttps.protocols=TLSv1.2,TLSv1.1,TLSv1
+export ORG_GRADLE_PROJECT_githubUser="x-access-token"
+export ORG_GRADLE_PROJECT_githubPassword=`op read "op://Jobb/GithubPat/credential"` # https://support.1password.com/command-line-getting-started/
