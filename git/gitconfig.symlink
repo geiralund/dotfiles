@@ -49,3 +49,5 @@
 
 [hub]
 	protocol = git
+[init]
+	defaultBranch = main
