@@ -51,3 +51,5 @@
 	protocol = git
 [init]
 	defaultBranch = main
+[git-mob-config]
+	github-fetch = true
