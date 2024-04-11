@@ -1,0 +1,1 @@
+export NPM_AUTH_TOKEN=$PAT_SECRET
