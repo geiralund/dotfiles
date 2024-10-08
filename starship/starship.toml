@@ -1,0 +1,39 @@
+# prompt
+
+format = '$all$directory$character'
+
+[cmd_duration]
+disabled = false
+
+[kubernetes]
+format = 'on [⛵ ($user on )($cluster in )\($namespace\)](green) '
+disabled = false
+
+[git_status]
+disabled = false
+
+[hostname]
+disabled = true
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[time]
+disabled = true
+time_format = "%Y-%m-%d %H:%M"
+utc_time_offset = "local"
+
+[username]
+style_root = "green bold"
+format = "😈 [$user]($style) "
+disabled = false
+show_always = false
+
+[git_branch]
+truncation_length = 20
+truncation_symbol = "…"
+style="bold purple"
