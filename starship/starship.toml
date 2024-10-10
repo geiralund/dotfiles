@@ -1,15 +1,20 @@
-# prompt
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
 
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# prompt
 format = '$all$directory$character'
+
+[directory]
+truncation_length = 10
 
 [cmd_duration]
 disabled = false
 
 [kubernetes]
 format = 'on [⛵ ($user on )($cluster in )\($namespace\)](green) '
-disabled = false
-
-[git_status]
 disabled = false
 
 [hostname]
@@ -34,6 +39,20 @@ disabled = false
 show_always = false
 
 [git_branch]
-truncation_length = 20
+truncation_length = 30
 truncation_symbol = "…"
 style="bold purple"
+
+[git_status]
+conflicted = "⚔️ "
+ahead = "🏎️ 💨 ×${count} "
+behind = "🐢 ×${count} "
+diverged = "🔱 🏎️ 💨 ×${ahead_count} 🐢 ×${behind_count} "
+untracked = "🛤️  ×${count} "
+stashed = "📦 "
+modified = "📝 ×${count} "
+staged = "🗃️  ×${count} "
+renamed = "📛 ×${count} "
+deleted = "🗑️  ×${count} "
+style = "bright-white"
+format = "$all_status$ahead_behind"

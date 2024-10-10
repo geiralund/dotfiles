@@ -1,3 +1,7 @@
+# initialize autocomplete here, otherwise functions won't be loaded
+autoload -U compinit
+compinit -i
+
 # lang
 export LC_ALL="no_NO.UTF-8"
 export LANG="no_NO.UTF-8"
@@ -33,9 +37,6 @@ do
   source $file
 done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -54,13 +55,9 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 
-
 # https://kubernetes.io/docs/tasks/tools/included/optional-kubectl-configs-zsh/
 source <(kubectl completion zsh)
 complete -F __start_kubectl k
-
-# nais-cli
-# source <(nais completion zsh)
 
 # default java from sdkman
 export JAVA_HOME="$HOME/.sdkman/candidates/java/current"
