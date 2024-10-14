@@ -1,11 +1,18 @@
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit -i
-
 # lang
 export LC_ALL="no_NO.UTF-8"
 export LANG="no_NO.UTF-8"
 export LC_CTYPE="no_NO.UTF-8"
+
+
+# initialize autocomplete here, otherwise functions won't be loaded
+if type brew &>/dev/null; then
+    source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+    source $(brew --prefix)/share/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+    autoload -Uz compinit
+    compinit -i
+
+fi
 
 # shortcut to this dotfiles path is $ZSH
 export ZSHDOT=$HOME/.dotfiles
@@ -103,6 +110,7 @@ hedo() {
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 
 export STARSHIP_CONFIG=~/.dotfiles/starship/starship.toml
 
