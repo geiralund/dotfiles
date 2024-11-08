@@ -52,6 +52,10 @@ done
 
 unset config_files
 
+#stern zsh completion code
+source <(stern --completion=zsh)
+
+
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
