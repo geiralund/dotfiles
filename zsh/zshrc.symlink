@@ -75,13 +75,12 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 # local bin
 export PATH="$HOME/bin:$PATH"
 
-# edgedb
-export PATH="$PATH:/Users/l153963/Library/Application Support/edgedb/bin"
-
 # Node version manager START
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+nvm use stable
 # Node version manager END
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -102,14 +101,12 @@ hedo() {
 }
 
 
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-
+## Starship
 export STARSHIP_CONFIG=~/.dotfiles/starship/starship.toml
-
 eval "$(starship init zsh)"
+## Starship end
 
