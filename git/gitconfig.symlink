@@ -53,3 +53,5 @@
 	defaultBranch = main
 [git-mob-config]
 	github-fetch = true
+[rerere]
+	enabled = true
