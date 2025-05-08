@@ -11,6 +11,24 @@
         wipe = reset --hard HEAD
         promote = !$ZSHDOT/bin/git-promote
         count   = !git shortlog -sn
+[init]
+	defaultBranch
+
+[column]
+        ui = auto
+
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
+[tag]
+        sort = version:refname
+
+[diff]
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
 
 [color]
         diff = auto
@@ -33,11 +51,32 @@
 	    default = current
 	    rebase = true
 [push]
-	    default = current
-	    autoSetupRemote = true
+        default = simple
+        autoSetupRemote = true
+        followTags = true
+
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+
 [commit]
+        verbose = true
 	    gpgsign = true
 	    template = /Users/l153963/.gitmessage
+
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
+
+[help]
+        autocorrect = prompt
+
+[rerere]
+ 	enabled = true
+ 	autoupdate = true
+
 [user]
   signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFD+dzJ+43T2teupbZmLe04Isa0CrqshOYE+ITz5JBCz
 
@@ -49,9 +88,6 @@
 
 [hub]
 	protocol = git
-[init]
-	defaultBranch = main
+
 [git-mob-config]
 	github-fetch = true
-[rerere]
-	enabled = true
