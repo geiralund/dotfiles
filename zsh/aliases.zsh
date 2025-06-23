@@ -12,5 +12,27 @@ alias tot='du -cksh'
 alias weather='curl wttr.in/Askim'
 alias serve='python3 -m http.server'
 
-alias logs='open https://logs.adeo.no/'
-alias specmatic='java -jar ~/bin/specmatic.jar'
+alias elastic='open https://logs.adeo.no/'
+
+
+function log() {
+  if [[ -z "$1" ]]; then
+    echo "Bruk: logapp <app-navn>"
+    return 1
+  fi
+  stern --exclude-container cloudsql-proxy -lapp="$1"
+}
+
+function loggmeldinger() {
+  if [[ -z "$1" ]]; then
+    echo "Bruk: logapp <app-navn>"
+    return 1
+  fi
+  stern --exclude-container cloudsql-proxy -lapp="$1" -o json | jq -r '
+                                                                  .message
+                                                                  | fromjson
+                                                                  | select(.message | test("committing offset*"; "i") | not)
+                                                                  | select(.message | test("responding to ping*"; "i") | not)
+                                                                  | "\(.level) -> \(.message)"
+                                                                '
+}
